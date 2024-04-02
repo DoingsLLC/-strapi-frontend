@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/api"
+  from = "https://melodic-rabanadas-8ccf01.netlify.app/"
   to = "https://strapi-backend-production-abca.up.railway.app"
   status = 200
   force = true # COMMENT: ensure that we always redirect
