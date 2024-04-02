@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "https://melodic-rabanadas-8ccf01.netlify.app/"
-  to = "https://strapi-backend-production-abca.up.railway.app"
+  from = "/api/*"
+  to = "https://strapi-backend-production-abca.up.railway.app:splat"
   status = 200
   force = true # COMMENT: ensure that we always redirect
   headers = {X-From = "Netlify"}

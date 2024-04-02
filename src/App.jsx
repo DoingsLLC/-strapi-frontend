@@ -96,7 +96,7 @@ const App = () => {
     loading: StudyOnCampusLoading,
     error: StudyOnCampusError,
   // } = UseFetch("/api/Campuses?populate=*");
-  }= UseFetch("/api/Campuses?populate=*");
+  }= UseFetch("/api/Campuses");
   
 {console.log(StudyOnCampusData)}
  
