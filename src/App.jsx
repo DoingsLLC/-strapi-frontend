@@ -97,7 +97,8 @@ const App = () => {
     error: StudyOnCampusError,
   // } = UseFetch("/api/Campuses?populate=*");
   }= UseFetch("/api/Campuses?populate=*");
-
+  
+{console.log(StudyOnCampusData)}
  
   let {
     data: CampusProgramData,
