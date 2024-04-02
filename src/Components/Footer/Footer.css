@@ -1,0 +1,134 @@
+.section_padding {
+  padding: 4rm 4rem;
+}
+
+.footer {
+  background-color: #095797;
+}
+
+.sb_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sb__footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  text-align: left;
+}
+.sb__footer-links img {
+  width: 200px;
+  height: 99px;
+  margin-left: 50px;
+}
+
+.sb__footer-links_div {
+  width: 150px;
+  margin: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+a {
+  color: rgb(175, 175, 179);
+  text-decoration: none;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialmedia img {
+  width: 80%;
+}
+
+.sb__footer-links_div h4 {
+  line-height: 17px;
+  margin-bottom: 0.9rem;
+  width: 236px;
+  height: 23px;
+  top: 4614px;
+  left: 58px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.sb__footer-links_div p {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.sb__footer-below {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0.2rem;
+  align-items: center;
+  width: 100%;
+}
+.sb__footer-below-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.sb__footer-below-links p {
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 2rem;
+  font-weight: 600;
+  color: white;
+}
+.footer-con {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-bottom: -30px;
+}
+.foot-logo img {
+  width: 150px;
+  height: 80px;
+  top: 4855px;
+  left: 75px;
+}
+hr {
+  border: 1px solid #ffffff transparent;
+  width: 80%;
+  margin: auto;
+}
+
+.sb_footer-copyright p {
+  font-size: 13px;
+  line-height: 15px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}

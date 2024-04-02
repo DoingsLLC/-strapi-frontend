@@ -1,0 +1,131 @@
+.r-container {
+  width: 100%;
+  height: auto;
+  margin-top: 90px;
+  margin-bottom: 5rem;
+}
+.r-box {
+  width: 100%;
+  height: 50vh;
+  justify-content: space-between;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+}
+.r-box1 {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #0957970a;
+  transition: background-color 0.3s, color 0.3s;
+  flex-wrap: wrap;
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+}
+.r-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.r-btn {
+  background: #095797;
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  width: 320px;
+  height: 51px;
+  left: 405px;
+  border-radius: 15px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #095797;
+  float: right;
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  align-items: center;
+}
+.r-box1 img {
+  width: 40px;
+  height: 41px;
+}
+
+.r-box1 p {
+  width: 100%; /* Adjust width to fill the container */
+  max-width: 100%; /* Set maximum width to prevent overflowing */
+  white-space: normal; /* Allow text to wrap */
+  overflow: hidden; /* Hide any overflow content */
+  text-overflow: ellipsis; /* Display ellipsis for overflowed content */
+  margin-top: 10px; /* Reduce top margin for better alignment */
+}
+
+.r-box1:hover {
+  background: #095797;
+  cursor: pointer;
+}
+
+.r-box1:hover p {
+  color: white;
+}
+
+/* Keep your existing styles */
+
+/* Adjust layout for smaller devices */
+@media only screen and (max-width: 768px) {
+  .r-box1 {
+    width: calc(100% - 20px); /* Display one box per row */
+  }
+}
+
+/* Further adjust layout for even smaller devices */
+@media only screen and (max-width: 480px) {
+  .r-box1 {
+    width: calc(100% - 20px); /* Display one box per row */
+    margin-bottom: 20px; /* Adjust bottom margin for better spacing */
+  }
+
+  .r-box {
+    height: auto; /* Auto adjust height based on content */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .r-btn {
+    width: 100%; /* Make button full width */
+    max-width: 320px; /* Set maximum width for better readability */
+  }
+}
+
+/* Adjust layout for smaller devices */
+@media only screen and (max-width: 768px) {
+  .r-box {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .r-box1 {
+    width: 90%;
+  }
+}

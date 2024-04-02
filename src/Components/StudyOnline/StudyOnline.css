@@ -1,0 +1,60 @@
+/* ColumnLayout.css */
+
+/* Styles for the study online text */
+.std-online-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.std-online-text h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  margin-top: 60px;
+}
+
+/* Container for responsive columns */
+.responsive-columns-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align columns */
+  gap: 30px;
+  margin: 40px auto; /* Center the container */
+  max-width: 1200px; /* Optional: Set maximum width for better responsiveness */
+}
+
+/* Individual column styles */
+.std-column {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #095797;
+  border-radius: 15px;
+  width: calc(50% - 15px); /* Two columns per row */
+  max-width: 280px; /* Maximum width for better responsiveness */
+  margin-bottom: 30px; /* Spacing between columns */
+}
+.std-column img {
+  width: 50%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.std-column p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #095797;
+}
+
+/* Tablet-specific styles */
+@media (max-width: 768px) {
+  .std-column {
+    width: 80%; /* Full width for one column per row */
+    max-width: none; /* Remove maximum width */
+  }
+}

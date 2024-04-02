@@ -1,0 +1,71 @@
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  padding: 20px; /* Adjust padding for responsiveness */
+  margin-top: 20px;
+}
+
+.about-us-img {
+  width: 30%; /* Set initial width for the image */
+  max-width: 300px; /* Set maximum width for the image */
+  height: 400px; /* Set height for the image */
+}
+
+.about-us-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image fills the container */
+}
+
+.about-us-text {
+  width: 70%; /* Set initial width for the text box */
+  max-width: calc(100% - 320px); /* Set maximum width for the text box */
+  height: 400px;
+  margin-right: 20px;
+  background: #095797;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative; /* Position relative for absolute positioning of h2 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-text h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  top: 20px; /* Adjust top position as needed */
+  position: absolute;
+  font-family: Poppins;
+}
+
+.about-us-text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0; 
+}
+
+@media only screen and (max-width: 769px) {
+  .about-us-img {
+    width: 20%; /* Decrease width of the image on smaller screens */
+    max-width: none; /* Remove max-width for the image */
+    height: 400px; /* Let the height adjust automatically */
+  }
+
+  .about-us-text {
+    width: 80%; /* Increase width of the text box on smaller screens */
+    max-width: none; /* Remove max-width for the text box */
+    margin-right: 0; /* Remove right margin for the text box */
+  }
+  .About-ART-Page{
+    margin-top: 90px;
+  }
+}

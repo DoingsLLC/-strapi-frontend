@@ -1,0 +1,75 @@
+.choose-city-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choose-city-text h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.res-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start of the cross axis */
+  flex-wrap: wrap;
+  margin-left: 5rem;
+}
+.responsive-columns-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 10px;
+}
+.city-column {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #095797;
+  border-radius: 15px;
+  height: 160px;
+  width: 250px;
+  transition: background-color 0.3s; /* Add transition for background-color */
+  color: #095797;
+}
+
+.city-column:hover {
+  background-color: #095797; /* Change background color on hover */
+}
+
+.city-column img {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px; /* Adjust image width/height as needed */
+}
+
+.city-column p {
+  margin-top: 15px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black; /* Set default text color */
+  transition: color 0.3s; /* Add transition for text color */
+}
+
+.city-column:hover p {
+  color: white; /* Change text color on hover */
+}
+
+@media only screen and (min-width: 769px) {
+  .responsive-columns-container {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to two columns per row */
+    overflow-x: hidden;
+  }
+  .res-container {
+    align-items: center; /* Center items on smaller screens */
+  }
+}

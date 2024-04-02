@@ -1,0 +1,132 @@
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+
+.hero-img {
+  width: 450px;
+  height: auto;
+  float: left;
+  margin-top: 105px;
+  margin-left: 90px;
+  position: absolute;
+  margin-left: 50px;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-para {
+  width: 40%;
+  max-width: 450px;
+  height: auto;
+  position: absolute;
+  margin-left: 370px;
+  margin-top: 210px;
+}
+
+.hero-para p {
+  font-family: Poppins;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+  color: #000000;
+}
+
+.par-btn {
+  margin-top: 25px;
+}
+
+.btn {
+  width: 208px;
+  height: 37px;
+  background: #db0404;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 8px;
+}
+
+.hero-body {
+  width: 500px;
+  height: auto;
+  float: right;
+  margin-top: 120px;
+  margin-right: 70px;
+}
+
+.hero-body h2 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #db0404;
+}
+
+.left-side-image {
+  width: 400px;
+  height: 344px;
+  right: 0;
+  margin-top: -50px;
+  position: absolute;
+  margin-right: 40px;
+}
+
+.left-side-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .hero-img {
+    display: none; /* Hide the first image on tablets and smaller devices */
+  }
+  .hero-body {
+    margin-top: -120px; /* Adjust margin for better spacing */
+  }
+  .left-side-image img {
+    margin-left: 50px;
+  }
+  .hero-para {
+    position: relative; /* Change position to relative to place it below hero-body */
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 450px;
+    height: auto;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 55vh;
+  }
+  .hero-body {
+    margin-top: -380px; /* Adjust margin for better spacing */
+    margin-right: 30px;
+  }
+  .hero-body h2 {
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .hero-content {
+    margin-top: 400px;
+  }
+  .par-btn {
+    display: flex;
+  }
+}

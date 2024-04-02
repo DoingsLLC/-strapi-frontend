@@ -1,0 +1,87 @@
+.Call-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.Call-box {
+  width: 80%;
+  max-width: 1200px; /* Set a maximum width for larger screens */
+  height: auto; /* Adjust height to fit content */
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid #095797;
+  background: #095797;
+}
+
+/* Additional styling */
+.Call-box p {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.Call-button {
+  width: 30%; /* Adjust width to fit container */
+  height: 68px;
+  border-radius: 15px;
+  background: white;
+  color: #095797;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background 0.3s ease;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.call-box-p2 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .Call-Container {
+    padding-top: 20px; /* Adjust the padding for smaller screens */
+  }
+
+  .Call-box {
+    width: 90%; /* Adjust the width for smaller screens */
+    padding: 20px; /* Adjust the padding for smaller screens */
+    margin-top: 40px;
+  }
+  .Call-button {
+    width: auto;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 769px) and (max-width: 1180px) {
+  .Call-Container {
+    padding-top: 100px;
+  }
+
+  .Call-box p {
+    width: 100%; /* Adjust width to fit container */
+    font-size: 18px;
+  }
+  .Call-button {
+    width: auto;
+  }
+}

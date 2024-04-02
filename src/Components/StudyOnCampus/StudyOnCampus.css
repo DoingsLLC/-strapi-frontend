@@ -1,0 +1,63 @@
+/* ColumnLayout.css */
+.oncampus-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.oncampus-text h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.column-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  background-color: #ececec;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: 293px;
+  width: 200px;
+  position: relative;
+}
+
+.column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #095797b8;
+  padding: 45px;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.overlay p {
+  color: #fff; /* Text color on overlay */
+  margin: 0;
+  width: 124px;
+  height: 35px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+}

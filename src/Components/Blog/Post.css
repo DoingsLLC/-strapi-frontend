@@ -1,0 +1,114 @@
+/* Post.css */
+
+.blogs-heading {
+  margin-top: 90px;
+  margin-bottom: -80px;
+}
+.blogs-heading h1 {
+  color: black;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+  text-align: left;
+}
+.posts-container {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.left-side-container {
+  width: calc(60% - 3%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.right-side-container {
+  width: calc(40% - 2%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-side-container-imag-box,
+.right-side-container-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.left-side-container-imag-box img,
+.right-side-container-box img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/* Post.css */
+
+/* Existing styles... */
+
+.left-side-container-text-box {
+  margin-right: 5%; /* Adjusted margin for responsiveness */
+  margin-top: -15px;
+  width: calc(90% - 40px); /* Adjusted width for responsiveness */
+  margin-left: -8%;
+}
+
+.left-side-container-text-box p {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+
+.left-side-container-text-box a {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* Existing styles... */
+
+.right-side-container-text-box {
+  margin-right: 120px;
+  margin-top: -15px;
+}
+
+.right-side-container-text-box p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.right-side-container-text-box .read-more {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #095797;
+}
+@media only screen and (max-width: 768px) {
+  .posts-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side-container,
+  .right-side-container {
+    width: 100%;
+  }
+
+  .blogs-heading h1 {
+    text-align: center;
+    margin-top: -100px;
+  }
+}

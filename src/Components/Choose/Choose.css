@@ -1,0 +1,156 @@
+.choose {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  /* flex-direction: row; */
+}
+
+.first-div {
+  flex: 1; /* 60% width, do not grow, do not shrink */
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding in the element's total width */
+  background: #0957970a;
+  height: auto;
+}
+
+.first-div p {
+  width: 636px;
+  height: 59px;
+  top: 1390px;
+  left: 66px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+.choose-text {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.choose-text img {
+  width: 80px;
+  height: 65px;
+  top: 1450px;
+  left: 66px;
+}
+
+.choose-text p {
+  width: 65%;
+  height: 69px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 15px;
+}
+.second-div {
+  flex: 1; /* 40% width, do not grow, do not shrink */
+  flex-wrap: wrap;
+}
+
+.second-div img {
+  width: 100%;
+  height: auto;
+  top: 1000px;
+  border-radius: 15px;
+  margin-left: -30px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .choose section */
+  .choose {
+    padding: 20px; /* Reduce padding on smaller screens */
+    margin-top: 350px;
+  }
+
+  .container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .first-div,
+  .second-div {
+    flex: 1 1 auto; /* Make divs take full width and grow/shrink proportionally */
+    margin-bottom: 10px; /* Add space between divs */
+  }
+
+  .first-div p {
+    width: 100%; /* Text takes full width */
+    top: unset; /* Remove top position */
+  }
+
+  .choose-text {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center content horizontally */
+    padding-bottom: 0; /* Remove bottom padding */
+  }
+
+  .choose-text p {
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .second-div img {
+    width: 100%; /* Image takes full width */
+    margin-left: 0; /* Remove left margin */
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* .choose section */
+  .choose {
+    padding: 20px; /* Reduce padding on smaller screens */
+    margin-top: 350px;
+  }
+
+  .container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .first-div,
+  .second-div {
+    flex: 1 1 auto; /* Make divs take full width and grow/shrink proportionally */
+    margin-bottom: 20px; /* Add space between divs */
+  }
+
+  .first-div p {
+    width: 100%; /* Text takes full width */
+    top: unset; /* Remove top position */
+  }
+
+  .choose-text {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center content horizontally */
+    padding-bottom: 0; /* Remove bottom padding */
+  }
+
+  .choose-text img {
+    margin-bottom: 10px; /* Add space between image and text */
+  }
+
+  .choose-text p {
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .second-div img {
+    width: 100%; /* Image takes full width */
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 90px;
+    margin-top: -400px;
+  }
+
+  /* Reorder elements for tablets */
+  .second-div {
+    order: -1; /* Move this div to the beginning */
+  }
+}

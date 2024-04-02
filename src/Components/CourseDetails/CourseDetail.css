@@ -1,0 +1,260 @@
+.Course-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 30px;
+}
+
+.Course-Design-box::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Bottom-Box {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  background: linear-gradient(to top, #095797, transparent 100%);
+  bottom: 0;
+  padding-left: 30px;
+}
+
+.Bottom-Box p {
+  width: auto;
+  color: white;
+  padding: 10px;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.Bottom-Box-boxes {
+  width: 179px;
+  height: 50px;
+  background-color: #e7eaec;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+.Bottom-Box-boxes img {
+  width: 45px;
+  height: 45px;
+  margin-left: 8px;
+}
+
+.Bottom-Box-boxes p {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  position: absolute;
+  margin-top: -10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .Bottom-Box {
+    height: auto;
+    padding-left: 15px;
+  }
+
+  .Bottom-Box p {
+    /* font-size: 30px; */
+    margin-top: 20px;
+    font-style: poppins;
+  }
+
+  .Bottom-Box-boxes {
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .Bottom-Box-boxes img {
+    width: 40px;
+    height: 35px;
+    margin-left: 8px;
+    margin-top: 6px;
+  }
+
+  .Bottom-Box-boxes p {
+    font-size: 20px;
+    margin-top: -8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Bottom-Box p {
+    /* font-size: 18px; */
+    margin-top: 20px;
+    font-style: poppins;
+  }
+
+  .Bottom-Box-boxes {
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .Bottom-Box-boxes img {
+    width: 40px;
+    height: 35px;
+    margin-left: 8px;
+    margin-top: 6px;
+  }
+
+  .Bottom-Box-boxes p {
+    font-size: 20px;
+    margin-top: -8px;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .Course-Container {
+    height: auto;
+    width: auto;
+  }
+
+  .Course-Design-box::before {
+    max-width: 100%;
+  }
+}
+
+.courses-conto {
+  margin-top: 5vw; /* Adjusted margin for responsiveness */
+}
+
+.Course-Card-Container {
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+  justify-content: center; /* Center boxes horizontally */
+  align-items: stretch; /* Stretch boxes vertically */
+  margin: auto;
+  width: 90%; /* Adjusted width for responsiveness */
+}
+
+.Course-Card-Box {
+  width: 45%; /* Adjusted width for responsiveness */
+  max-width: 304px; /* Added max-width to prevent boxes from becoming too wide */
+  border-radius: 15px;
+  background-color: rgb(241, 239, 236);
+  position: relative;
+  margin: 2.5%; /* Adjusted margin for responsiveness */
+  display: flex;
+  flex-direction: column; /* Ensure content stacks vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.Course-Card-Box img {
+  width: 77px;
+  height: 89px;
+  object-fit: cover;
+  margin-top: -44.5px; /* Adjusted to half of the image height */
+}
+
+.Course-Card-Box h1 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  font-family: Poppins;
+  color: #000000;
+}
+
+.box-text {
+  font-family: Poppins; /* Use your preferred font-family */
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #000000; /* Set the text color */
+  padding: 20px;
+  width: 250px;
+  height: auto; /* Allow the box to adjust its height based on content */
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.box-text li {
+  list-style-type: none; /* Remove the default list item marker */
+  margin-bottom: 5px; /* Add spacing between list items */
+}
+
+/* Optional: Add a custom marker for each line */
+.box-text li::before {
+  content: "•"; /* Use any character you prefer */
+  margin-right: 5px; /* Adjust the spacing between the marker and text */
+  color: #000000; /* Match the text color */
+}
+
+.course-detail-paragraph {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.course-detail-paragraph p {
+  margin-bottom: 20px; /* Add space between paragraphs */
+  font-family: "Poppins", sans-serif; /* Use your preferred font-family */
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.5; /* Set the line height for better readability */
+  color: #000000; /* Set the text color */
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.course-btn {
+  background-color: #095797;
+  color: #ffff;
+  width: 235px;
+  height: 51px;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+  border: none;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .Course-Card-Container {
+    flex-direction: column; /* Stack boxes vertically on smaller screens */
+    align-items: center;
+  }
+
+  .Course-Card-Box {
+    width: 80%; /* Adjust the width for smaller screens */
+    margin: 10px 0; /* Add margin between boxes */
+  }
+}

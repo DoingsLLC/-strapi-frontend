@@ -1,0 +1,124 @@
+.discover {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.dis-container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.disco-text p {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.half-width {
+  flex: 1;
+  width: 50%;
+  position: relative;
+}
+
+.full-width {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.overlap {
+  position: absolute;
+  bottom: -20px;
+  z-index: 1;
+  width: 60%; /* Adjusted width */
+  height: auto; /* Adjusted height */
+  border-radius: 20px;
+  right: 0; /* Center the overlap */
+}
+
+.disco-para {
+  width: 100%;
+  padding: 20px; /* Added padding for better spacing */
+  height: 80vh;
+}
+
+.row-1 {
+  display: flex;
+  align-items: left;
+}
+
+.row-1 img {
+  width: 70px;
+  height: 50px;
+  margin-right: 20px; /* Added margin for spacing */
+}
+
+.row-1 h3 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #000000;
+  margin-top: 10px; /* Removed top margin */
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .disco-text p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .half-width {
+    width: 100%;
+    margin-bottom: 20px; /* Added margin for spacing */
+  }
+
+  .half-width .overlap {
+    top: 220px;
+  }
+
+  .row-1 img {
+    width: 50px;
+    height: 35px;
+    margin-right: 10px; /* Adjusted margin */
+  }
+
+  .row-1 h3 {
+    font-size: 18px; /* Adjusted font size */
+    line-height: 24px; /* Adjusted line height */
+  }
+}
+
+/* Keep the existing styles */
+
+@media only screen and (max-width: 1024px) {
+  .boxes {
+    flex-direction: column; /* Stack boxes vertically on tablets */
+  }
+
+  .half-width {
+    width: 100%;
+  }
+
+  .overlap {
+    bottom: auto; /* Reset bottom position */
+    top: 370px; /* Position images on top */
+  }
+
+  .disco-para {
+    padding-top: 20px; /* Add padding to separate text from images */
+  }
+}
