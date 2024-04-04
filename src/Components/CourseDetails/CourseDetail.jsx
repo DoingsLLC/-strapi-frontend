@@ -46,7 +46,7 @@ const CourseDetail = ({ Programs }) => {
             border: "1px solid #095797",
             overflow: "hidden",
             position: "relative",
-            background: `linear-gradient(to bottom, rgba(9, 87, 151, 0.5), transparent), url("http://localhost:1337${program.attributes.icon?.data?.attributes?.formats?.thumbnail?.url}") center/cover no-repeat`,
+            background: `linear-gradient(to bottom, rgba(9, 87, 151, 0.5), transparent), url("https://strapi-backend-production-abca.up.railway.app${program.attributes.icon?.data?.attributes?.formats?.thumbnail?.url}") center/cover no-repeat`,
           }}
         >
           <div className="Bottom-Box">

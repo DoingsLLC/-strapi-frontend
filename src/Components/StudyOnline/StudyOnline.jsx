@@ -26,7 +26,7 @@ const StudyOnline = ({
             >
               <img
                 src={
-                  "http://localhost:1337" +
+                  "https://strapi-backend-production-abca.up.railway.app" +
                   onlineClass.attributes.Image?.data?.attributes?.formats
                     ?.thumbnail?.url
                 }

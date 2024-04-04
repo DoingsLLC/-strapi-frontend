@@ -2,7 +2,7 @@ import "./Hero.css";
 import Hero1 from "../../assets/Hero1.png";
 import Hero2 from "../../assets/Hero2.png";
 
-const Hero = () => {
+const Hero = ({onApplyNowClick}) => {
   return (
     <div className="hero">
       <div className="hero-img">
@@ -28,7 +28,7 @@ const Hero = () => {
 
           <div className="par-btn">
             <button className="btn">Explore Programs</button>
-            <button className="btn">Talk To a Consultant</button>
+            <button className="btn" onClick={onApplyNowClick}>Talk To a Consultant</button>
           </div>
         </div>
       </div>

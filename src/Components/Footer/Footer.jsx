@@ -5,7 +5,7 @@ import yt from "../../assets/Footer/yb.png";
 import web from "../../assets/Footer/web.png";
 import logo from "../../assets/Logo.png";
 
-const Footer = () => {
+const Footer = ({OnlineClasses, Campuses}) => {
   return (
     <div className="footer">
       <div className="sb__footer section__padding">
@@ -38,32 +38,22 @@ const Footer = () => {
             </a>
           </div>
           <div className="sb__footer-links_div">
-            <h4>Study Online</h4>
-            <a href="#">
-              <p>Swing Tech</p>
+          <h4>Study Online</h4>
+          {OnlineClasses && OnlineClasses.data.map((item) => (
+            <a href="#" key={item.id}>
+              <p>{item.attributes.Title}</p>
             </a>
-
-            <a href="#">
-              <p>Swing Tech</p>
+          ))}
+        </div>
+        <div className="sb__footer-links_div">
+          <h4>Study on Campus</h4>
+          {Campuses && Campuses.data.map((item) => (
+            <a href="#" key={item.id}>
+              <p>{item.attributes.Title}</p>
             </a>
-
-            <a href="#">
-              <p>Swing Tech</p>
-            </a>
-          </div>
-          <div className="sb__footer-links_div">
-            <h4>Study on Campus</h4>
-            <a href="#">
-              <p>About Us</p>
-            </a>
-
-            <a href="#">
-              <p>Contact Us</p>
-            </a>
-            <a href="#">
-              <p>Privacy Policy</p>
-            </a>
-          </div>
+          ))}
+        </div>
+        </div>
         </div>
 
         <div className="footer-con">
@@ -88,9 +78,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr></hr>
-
+        
+        <hr className="footer-hr"></hr>
         <div className="sb__footer-below">
+        
           <div className="sb_footer-copyright">
             <p>
               &copy; {new Date().getFullYear()} All Rights Reserved by Canadian
@@ -101,7 +92,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 };

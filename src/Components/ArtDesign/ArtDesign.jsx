@@ -45,7 +45,7 @@ const ArtDesign = ({ Programs, setSelectedProgram }) => {
           <div key={program.id} className="Art-box">
             <img
               src={
-                "http://localhost:1337" +
+                "https://strapi-backend-production-abca.up.railway.app" +
                 program.attributes.coverImage?.data?.attributes?.formats
                   ?.thumbnail?.url
               }

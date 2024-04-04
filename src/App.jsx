@@ -27,38 +27,41 @@ import Blogs from "./Components/Blog/Blogs/BlogsPost.jsx";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const HomeRoutes = () => {
-  return (
-    <>
-      <Route path="/" element={<HomeComponents />} />
-    </>
-  );
-};
-const HomeComponents = () => {
-  const [showForm, setShowForm] = useState(false);
 
-  const handleApplyNowClick = () => {
-    setShowForm(true);
-  };
-
-  const handleCloseForm = () => {
-    setShowForm(false);
-  };
-  return (
-    <>
-      <Hero />
-      <Headfoot onApplyNowClick={handleApplyNowClick} />
-      {showForm ? <Form onClose={handleCloseForm} /> : null}
-      <Discover />
-      <Choose />
-      <ReadyGetStarted onApplyNowClick={handleApplyNowClick} />
-      {showForm ? <Form onClose={handleCloseForm} /> : null}
-      <Footer />
-    </>
-  );
-};
 
 const App = () => {
+  const HomeRoutes = () => {
+    return (
+      <>
+        <Route path="/" element={<HomeComponents />} />
+      </>
+    );
+  };
+  const HomeComponents = () => {
+    const [showForm, setShowForm] = useState(false);
+  
+    const handleApplyNowClick = () => {
+      setShowForm(true);
+    };
+  
+    const handleCloseForm = () => {
+      setShowForm(false);
+    };
+    return (
+      <>
+        <Hero onApplyNowClick={handleApplyNowClick} />
+        {showForm ? <Form onClose={handleCloseForm} /> : null}
+        <Headfoot onApplyNowClick={handleApplyNowClick} />
+        {showForm ? <Form onClose={handleCloseForm} /> : null}
+        <Discover />
+        <Choose />
+        <ReadyGetStarted onApplyNowClick={handleApplyNowClick} />
+        {showForm ? <Form onClose={handleCloseForm} /> : null}
+        <Footer OnlineClasses={onlineClassesData ? onlineClassesData : ""}
+          Campuses={StudyOnCampusData ? StudyOnCampusData : ""}/>
+      </>
+    );
+  };
   const [showForm, setShowForm] = useState(false);
 
   const [selectedProgram, setSelectedProgram] = useState("");
@@ -96,9 +99,8 @@ const App = () => {
     loading: StudyOnCampusLoading,
     error: StudyOnCampusError,
   // } = UseFetch("/api/Campuses?populate=*");
-  }= UseFetch("/api/Campuses");
+  }= UseFetch("/api/Campuses?populate=*");
   
-{console.log(StudyOnCampusData)}
  
   let {
     data: CampusProgramData,

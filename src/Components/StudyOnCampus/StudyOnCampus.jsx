@@ -27,13 +27,12 @@ const OnCampus = ({
               >
                 <img
                   src={
-                    "http://localhost:1337" +
+                    "https://strapi-backend-production-abca.up.railway.app" +
                     campuses.attributes.Image?.data?.attributes?.formats
                       ?.thumbnail?.url
                   }
                   alt={`Program ${campuses.id}`}
                 />
-                {console.log(campuses)}
                 <Link to={`/study-oncampus/choose-a-city/${campuses.id}`}>
                   <div className="overlay">
                     <p>{campuses.attributes.Title}</p>
